@@ -1,0 +1,49 @@
+body{
+    background-color: black !important;
+    color: #70B778 !important;
+    text-shadow: 0 0 20px #557258 !important
+}
+.pre{
+    background: black !important;
+    color: #70B778 !important;
+    text-shadow: 0 0 20px #557258 !important
+}
+body p{
+    font-size: 20px !important;
+    font-family: 'modesevenregular', 'Courier New', Courier, monospace !important;
+    font-weight: bolder !important;
+}
+.container
+{
+    margin: 10px 20px 10px 20px;
+}
+.banner{
+    margin:3px 0 20px 96px !important
+}
+
+/* Blinking Cursor starts */
+.cursor {
+	position: relative;
+}
+.cursor	i {
+	position: absolute;
+	width: 1px;
+	height: 80%;
+	background-color: gray;
+	left: 5px;
+	top: 10%;
+	animation-name: blink;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
+}
+
+.cursor input:focus + i {
+	display: none;
+}
+
+@keyframes blink {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+/* Blinking Cursor ends */
